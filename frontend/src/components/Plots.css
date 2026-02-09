@@ -1,0 +1,55 @@
+.plots-empty { margin-top: 0.5rem; }
+.plots-empty .muted { margin: 0.25rem 0; }
+.steps-hint { font-size: 0.85rem; margin-top: 0.5rem; }
+
+.plots-hint {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin: 0 0 1rem;
+}
+
+.plots-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.plot-figure {
+  margin: 0;
+  padding: 0;
+}
+
+.plot-img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.plot-caption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.plot-placeholder {
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .plots-grid {
+    grid-template-columns: 1fr;
+  }
+}

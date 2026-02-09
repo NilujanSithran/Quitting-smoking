@@ -1,0 +1,30 @@
+.model-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.model-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.model-info-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.model-info-value {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.model-info-note {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0;
+}

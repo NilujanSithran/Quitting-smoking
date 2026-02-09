@@ -1,0 +1,176 @@
+.prediction-card .muted {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.prediction-form {
+  margin-bottom: 1rem;
+}
+
+.prediction-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.field-group label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.field-group input {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.field-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.prediction-btn {
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--accent);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.prediction-btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+}
+
+.prediction-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.prediction-reset-btn {
+  margin-top: 1rem;
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.prediction-reset-btn:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.prediction-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.prediction-results {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.results-title {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.results-summary {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.summary-label {
+  color: var(--muted);
+  margin-right: 0.5rem;
+}
+
+.summary-value {
+  font-weight: 700;
+}
+
+.summary-value.smoking {
+  color: #e74c3c;
+}
+
+.summary-value.nonsmoking {
+  color: #2ecc71;
+}
+
+.summary-percent {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.prediction-chart {
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.chart-title {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.technique-accuracy {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.technique-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.technique-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+}
+
+.technique-item:last-child {
+  border-bottom: none;
+}
+
+.technique-name {
+  min-width: 140px;
+  font-weight: 500;
+}
+
+.technique-percent {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.technique-label {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
