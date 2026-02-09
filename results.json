@@ -1,0 +1,49 @@
+{
+  "best_model": "Random Forest",
+  "best_accuracy": 0.7736,
+  "models": [
+    {
+      "name": "Random Forest",
+      "accuracy": 0.7736
+    },
+    {
+      "name": "SVM",
+      "accuracy": 0.7659
+    },
+    {
+      "name": "Neural Network",
+      "accuracy": 0.7693
+    }
+  ],
+  "available": true,
+  "feature_cols": [
+    "age",
+    "height(cm)",
+    "weight(kg)",
+    "waist(cm)",
+    "eyesight(left)",
+    "eyesight(right)",
+    "relaxation",
+    "fasting blood sugar",
+    "triglyceride",
+    "HDL",
+    "LDL",
+    "hemoglobin",
+    "serum creatinine",
+    "ALT",
+    "Gtp",
+    "dental caries"
+  ],
+  "plot_files": [
+    "model_comparison.png",
+    "confusion_matrices.png",
+    "roc_curves.png",
+    "eda.png",
+    "target_count.png",
+    "histogram_numeric.png",
+    "box_plot.png",
+    "correlation_heatmap.png",
+    "bar_categorical_target.png",
+    "pair_plot.png"
+  ]
+}
